@@ -1,5 +1,5 @@
-import { UFSection } from "@/components/UFSection";
 import Link from "next/link";
+import { UFSection } from "@/components/UFSection";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL;
 
