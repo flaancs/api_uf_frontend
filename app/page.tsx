@@ -17,7 +17,7 @@ export default function Home() {
         <Link
           href={`${BACKEND_URL}docs`}
           title="Documentación API UF"
-          className="mt-4"
+          className="mt-4 text-white"
         >
           Documentación API
         </Link>
