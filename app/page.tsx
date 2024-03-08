@@ -1,4 +1,7 @@
 import { UFSection } from "@/components/UFSection";
+import Link from "next/link";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function Home() {
   return (
@@ -11,6 +14,13 @@ export default function Home() {
           </h2>
         </div>
         <UFSection />
+        <Link
+          href={`${BACKEND_URL}docs`}
+          title="Documentación API UF"
+          className="mt-4"
+        >
+          Documentación API
+        </Link>
       </div>
     </main>
   );
