@@ -14,13 +14,24 @@ export default function Home() {
           </h2>
         </div>
         <UFSection />
-        <Link
-          href={`${BACKEND_URL}docs`}
-          title="Documentación API UF"
-          className="mt-4 text-white"
-        >
-          Documentación API
-        </Link>
+        <div className="flex gap-2 justify-center items-center">
+          <Link
+            target="_blank"
+            href={`${BACKEND_URL}docs`}
+            title="Documentación API UF"
+            className="mt-4 text-white"
+          >
+            Documentación API
+          </Link>
+          <Link
+            target="_blank"
+            href="https://github.com/flaancs/api_uf_backend"
+            title="Documentación API UF"
+            className="mt-4 text-white"
+          >
+            Github
+          </Link>
+        </div>
       </div>
     </main>
   );
