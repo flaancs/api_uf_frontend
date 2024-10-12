@@ -1,9 +1,21 @@
 import Link from "next/link";
 import { UFSection } from "@/components/UFSection";
+import { headers } from "next/headers";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function Home() {
+  const headersList = headers();
+  const ip = headersList.get("x-real-ip");
+  const lat = headersList.get("x-vercel-ip-latitude");
+  const long = headersList.get("x-vercel-ip-longitude");
+  const timezone = headersList.get("x-vercel-ip-timezone");
+
+  console.log("ip", ip);
+  console.log("lat", lat);
+  console.log("long", long);
+  console.log("timezone", timezone);
+  
   return (
     <main className="flex w-full min-h-screen flex-col justify-center px-8">
       <div className="flex flex-col gap-4 items-center justify-center">
